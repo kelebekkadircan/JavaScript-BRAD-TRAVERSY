@@ -1,0 +1,22 @@
+function Rectangle(name, width, height)
+{
+    this.name = name;
+    this.width = width;
+    this.height = height;
+    this.area = function()
+    {
+        return this.width * this.height ;
+    };
+
+}
+
+const rect = new Rectangle('Kadir',20,31);
+
+console.log(rect);
+// console.log(rect.area());
+console.log(Object.getPrototypeOf(rect));
+
+
+
+
+
